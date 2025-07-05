@@ -1,12 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GillOne</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<style>
+ *{
+    margin:0;
+    padding:0
+} 
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(39, 38, 38);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+main hr{
+    border: 0;
+    background-color: rgb(158, 150, 211);
+    height: 1.2px;
+    margin: 60px 84px;
+}
+nav ul li a:hover{
+    color: rgb(81, 81, 194);
+    font-size: 1.02rem;
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+    align-items: center;
+}
+.firstSection >div{
+    width: 30%;
+}
+.leftSection{
+    font-size: 2.5rem;
+  }
+.rightSection img{
+    width: 100%;
+}
+.about_p{
+    font-size: 20px;
+}
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    background: blueviolet;
+    color: white;
+}
+.btn:hover {
+    background: rgb(107, 107, 107);
+    color: white;
+}
+.purple{
+    color:blueviolet
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.secondSection .box{
+    background: white;
+    width: 76vw;
+    height: 2px;
+    margin: 120px 0;
+    display: flex;
+}
+.secondSection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+}
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 150px;
+    font-size: 10px;
+}
+.text-gray{
+    color: gray;
+}
+.section_text_p1 {
+    text-align: center;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+.experience-sub-title {
+    margin-left: 47px;
+}
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+.contact-icon {
+    cursor: default;
+}
+.email-icon {
+    height: 2.5rem;
+}
+.contact_p{
+    color: rgb(255,255,255);
+}
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+footer p {
+    text-align: center;
+}
+    </style>
 </head>
 <body>
-  <h1>WELCOME</h1>
+    <header><nav>
+            <div class="left">Armandeep's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home ></a></li>
+                    <li><a href="#About">About ></a></li>
+                    <li><a href="#Experienc">Experience></a>  </li>
+                    <li><a href="#Contact Me">Contact Me></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi my name is <span class="purple">ARMANDEEP SINGH</span>
+                <div>and I am a student in DAVIET</div><br>
+                <p class="about_p">I am persuing my BTECH degree in <span class="purple">CSE</span></p>
+                <button class="btn"onclick="">Download CV</button>
+            <span id="element"></span>
+            </div>
+            <div class="rightSection"><img src="./assets/pexels-photo-574071-1024x678.jpeg" alt="logo">
+            </div>
+            <br>
+            <br>
+        </section>
+        <hr>
+        <section id="experience">
+            <p class="section_text_p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                  <h2 class="experience-sub-title">PROGRAMING LANGUAGES:</h2>
+                  <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                      <div>
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                    </div>
+                    </article>
+                    <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon"  class="icon" />
+                      <div>
+                        <h3>CSS</h3>
+                        <p>Experienced</p>
+                    </div>
+                    </article>
+                    <article>
+                      <img src="./assets/checkmark.png"  alt="Experience icon" class="icon"/>
+                      <div>
+                        <h3>JavaScript</h3>
+                        <p>Basic</p>
+                    </div>
+                    </article>
+                    <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                      <div>
+                        <h3>C</h3>
+                        <p>Intermediate</p>
+                    </div>
+                    </article>
+                    <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                      <div>
+                        <h3>C++</h3>
+                        <p>Basic</p>
+                    </div>
+                    </article>
+                    <article><img src="./assets/checkmark.png"  alt="Experience icon" class="icon"/>
+                      <div>
+                        <h3>PYTHON</h3>
+                        <p>Intermediate</p>
+                    </div>
+                    </article>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+          </section>
+          <section id="contact">
+            <p class="section_text_p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+              <div class="contact-info-container">
+                <img src="./assets/email.png"  alt="Email icon" class="icon contact-icon email-icon"/>
+                <p class="contact_p"><a href="mailto:gillarman1435mail@gmail.com">gillarman1435@gmail.com</a></p>
+                </div>
+              <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+              </div>
+              <div class="contact-info-container">
+                <img src="./assets/github.png" alt="Github icon" class="icon contact-icon"/>
+                <p><a href="https://github.com">Github</a></p>
+              </div>
+          </section>
+    </main>
+    <footer>
+        <p>Copyright &#169; 2023 Armandeep Singh. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
